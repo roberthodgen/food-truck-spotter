@@ -4,6 +4,8 @@ from random import randint
 from os import urandom
 import cherrypy
 
+from util import UTC
+
 
 EVENTS = [
     ('Salami turkey', 'Salami consequat excepteur picanha ribeye corned beef.'),
@@ -38,7 +40,8 @@ class EventService(object):
 
 
 def build_event(name, description, happening_now=False):
-    start = datetime.now()
+    now = datetime.utcnow().replace(tzinfo=UTC())
+    start = now
     if happening_now:
         start = add_random_hours(add_random_days(start))
     else:
@@ -48,8 +51,8 @@ def build_event(name, description, happening_now=False):
         'id': random_id(),
         'name': name,
         'description': description,
-        'created': datetime.now().isoformat(),
-        'updated': datetime.now().isoformat(),
+        'created': now.isoformat(),
+        'updated': now.isoformat(),
         'start': start.isoformat(),
         'end': add_random_hours(start).isoformat(),
         'location': {
