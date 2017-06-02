@@ -6,9 +6,19 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    <button ion-button block color="primary" (click)="goToMenu()">Menu</button>
-  </p>
+
+<ion-content>
+  <div padding-horizontal>
+    <p>
+      Food Truck Spotter helps find your favorite food truck. Where we're at and where we will be next.
+    </p>
+    <p>
+      Don't forget to checkout our awesome menu...
+    </p>
+    <p>
+      <button ion-button block color="primary" (click)="goToMenu()">Menu</button>
+    </p>
+  </div>
+  <current-event [events]="events"></current-event>
+  <future-events [events]="events"></future-events>
 </ion-content>

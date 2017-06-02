@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Event Details
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div>
+    <event-details [event]="event"></event-details>
+    <div padding-horizontal>
+      <button ion-button block color="primary" (click)="goToMenu()">Menu</button>
+    </div>
+  </div>
+</ion-content>

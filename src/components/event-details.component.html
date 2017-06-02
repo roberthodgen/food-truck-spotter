@@ -1,0 +1,25 @@
+<div *ngIf="event">
+  <ion-card>
+    <ion-item>
+      <h1>
+        {{event.name}}
+      </h1>
+      <p>
+        From {{event.start | date:'EEE, MMM d, h:mm a'}} to {{event.end | date:'h:mm a'}}
+      </p>
+    </ion-item>
+    <ion-card-content>
+      <p>
+        {{event.description}}
+      </p>
+    </ion-card-content>
+    <ion-item>
+      <ion-icon name="compass" item-left large></ion-icon>
+      <h2>{{event.location.name}}</h2>
+      <p>{{event.location.street}}, {{event.location.city}}</p>
+    </ion-item>
+  </ion-card>
+</div>
+<div *ngIf="!event">
+  <p>Loading...</p>
+</div>
