@@ -42,7 +42,7 @@ class EventService(object):
 def build_event(name, description, happening_now=False):
     now = datetime.utcnow().replace(tzinfo=UTC())
     start = now
-    if happening_now:
+    if not happening_now:
         start = add_random_hours(add_random_days(start))
     else:
         start -= timedelta(minutes=30)
