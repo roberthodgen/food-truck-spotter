@@ -36,6 +36,7 @@ class EventService(object):
         events = []
         for index, event in enumerate(EVENTS):
             events.append(build_event(*event, happening_now=index == 0))
+        cherrypy.response.headers['access-control-allow-origin'] = '*'
         return events
 
 
