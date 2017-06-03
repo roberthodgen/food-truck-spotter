@@ -6,3 +6,4 @@ threadsafe: true
 handlers:
 - url: /.*
   script: appengine_main.app
+  secure: always

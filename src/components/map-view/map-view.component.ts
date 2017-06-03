@@ -48,7 +48,7 @@ export class MapView implements OnChanges {
     const street = searchEncode(this.event.location.street);
     const city = searchEncode(this.event.location.city);
     const { width, height, scale } = this.getMapHeightWidthScale();
-    this.mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${street},+${city}&zoom=15&size=${width}x${height}&markers=${street},+${city}&scale=${scale}`;
+    this.mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${street},+${city}&zoom=15&size=${width}x${height}&markers=${street},+${city}&scale=${scale}&key=AIzaSyCzLVYinuAfKQPeTligZoZTG0Uk75MWmqQ`;
   }
 
   private getMapHeightWidthScale(): Rect {
