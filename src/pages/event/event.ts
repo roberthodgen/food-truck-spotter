@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 
-import { Event } from '../../types/event';
+import { FoodTruckEvent } from '../../types/food-truck-event';
 import { MenuPage } from '../menu/menu';
 import { EventService } from "../../providers/event.service";
 
@@ -10,7 +10,7 @@ import { EventService } from "../../providers/event.service";
   templateUrl: './event.html'
 })
 export class EventPage implements OnInit {
-  public event: Event;
+  public event: FoodTruckEvent;
 
   constructor(private navCtrl: NavController, private eventService: EventService, private navParams: NavParams) {
   }

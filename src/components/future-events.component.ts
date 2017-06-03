@@ -1,7 +1,7 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core'
 import {NavController} from 'ionic-angular';
 
-import { Event } from '../types/event';
+import { FoodTruckEvent } from '../types/food-truck-event';
 import {EventPage} from '../pages/event/event';
 
 @Component({
@@ -9,7 +9,7 @@ import {EventPage} from '../pages/event/event';
   templateUrl: './future-events.component.html'
 })
 export class FutureEvents implements OnChanges {
-  @Input() public events: Event[];
+  @Input() public events: FoodTruckEvent[];
 
   constructor (private navCtrl: NavController) {
   }
@@ -20,7 +20,7 @@ export class FutureEvents implements OnChanges {
     this.events = this.events.filter(({start}) => new Date(start) > now);
   }
 
-  eventSelected({id}: Event) {
+  eventSelected({id}: FoodTruckEvent) {
     this.navCtrl.push(EventPage, {id});
   }
 }

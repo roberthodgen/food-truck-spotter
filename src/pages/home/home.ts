@@ -2,10 +2,10 @@ import {Component, OnInit} from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { MenuPage } from '../menu/menu';
-import { Event } from '../../types/event';
+import { FoodTruckEvent } from '../../types/food-truck-event';
 import { EventService } from '../../providers/event.service';
 
-function startCompare(eventA: Event, eventB: Event): number {
+function startCompare(eventA: FoodTruckEvent, eventB: FoodTruckEvent): number {
   const a = new Date(eventA.start);
   const b = new Date(eventB.start);
 
@@ -22,7 +22,7 @@ function startCompare(eventA: Event, eventB: Event): number {
   templateUrl: 'home.html'
 })
 export class HomePage implements OnInit {
-  public events: Event[];
+  public events: FoodTruckEvent[];
 
   constructor(public navCtrl: NavController, private eventService: EventService) {}
 

@@ -1,6 +1,6 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 
-import { Event } from '../types/event';
+import { FoodTruckEvent } from '../types/food-truck-event';
 import { NavController } from "ionic-angular";
 import { EventPage } from '../pages/event/event';
 
@@ -9,8 +9,8 @@ import { EventPage } from '../pages/event/event';
   templateUrl: './current-event.component.html'
 })
 export class CurrentEvent implements OnChanges {
-  @Input() public events: Event[];
-  public event: Event;
+  @Input() public events: FoodTruckEvent[];
+  public event: FoodTruckEvent;
 
   constructor (private navCtrl: NavController) {
   }
@@ -24,7 +24,7 @@ export class CurrentEvent implements OnChanges {
     }
   }
 
-  eventSelected({id}: Event): void {
+  eventSelected({id}: FoodTruckEvent): void {
     this.navCtrl.push(EventPage, {id});
   }
 }

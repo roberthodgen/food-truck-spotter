@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges, ElementRef } from '@angular/core';
 
-import { Event } from '../../types/event';
+import { FoodTruckEvent } from '../../types/food-truck-event';
 
 const WHITE_SPACE = new RegExp('\w');
 function searchEncode(input: string): string {
@@ -22,7 +22,7 @@ interface Rect {
   templateUrl: './map-view.component.html'
 })
 export class MapView implements OnChanges {
-  @Input() private event: Event;
+  @Input() private event: FoodTruckEvent;
   private mapUrl: string;
   private imgWidth: number;
   private afterContentInit: boolean = false;
