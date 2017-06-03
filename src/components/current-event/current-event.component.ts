@@ -1,8 +1,8 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 
-import { FoodTruckEvent } from '../types/food-truck-event';
+import { FoodTruckEvent } from '../../types/food-truck-event';
 import { NavController } from "ionic-angular";
-import { EventPage } from '../pages/event/event';
+import { EventPage } from '../../pages/event/event';
 
 @Component({
   selector: 'current-event',
