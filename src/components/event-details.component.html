@@ -4,8 +4,8 @@
       <h1>
         {{event.name}}
       </h1>
-      <p>
-        From {{event.start | date:'EEE, MMM d, h:mm a'}} to {{event.end | date:'h:mm a'}}
+      <p class="date">
+        {{event.start | date:'EEE, MMM d, h:mm a'}} to {{event.end | date:'h:mm a'}}
       </p>
     </ion-item>
     <ion-card-content>
@@ -13,8 +13,8 @@
         {{event.description}}
       </p>
     </ion-card-content>
+    <map-view [event]="event"></map-view>
     <ion-item>
-      <ion-icon name="compass" item-left large></ion-icon>
       <h2>{{event.location.name}}</h2>
       <p>{{event.location.street}}, {{event.location.city}}</p>
     </ion-item>
