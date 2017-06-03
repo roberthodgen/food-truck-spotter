@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "Food Truck Spotter",
+  "short_name": "Food Truck",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

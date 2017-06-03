@@ -22,6 +22,8 @@ self.toolbox.precache(
   ]
 );
 
+self.toolbox.router.any('/api/*', self.toolbox.networkFirst, {origin: 'https://food-truck-spotter.appspot.com'})
+
 // dynamically cache any other local assets
 self.toolbox.router.any('/*', self.toolbox.cacheFirst);
 
