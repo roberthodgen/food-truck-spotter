@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { MenuPage } from '../menu/menu';
@@ -24,7 +24,8 @@ function startCompare(eventA: FoodTruckEvent, eventB: FoodTruckEvent): number {
 export class HomePage implements OnInit {
   public events: FoodTruckEvent[];
 
-  constructor(public navCtrl: NavController, private eventService: EventService) {}
+  constructor(public navCtrl: NavController, private eventService: EventService) {
+  }
 
   ngOnInit(): void {
     this.eventService.getEvents()

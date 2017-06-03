@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
+import { Component, OnInit } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { FoodTruckEvent } from '../../types/food-truck-event';
 import { MenuPage } from '../menu/menu';
