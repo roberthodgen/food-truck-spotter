@@ -12,7 +12,7 @@ import { EventPage } from '../pages/event/event';
 
 import { FutureEvents } from '../components/future-events.component';
 import { CurrentEvent } from '../components/current-event.component';
-import { EventDetails } from '../components/event-details.component';
+import { EventDetails } from '../components/event-details/event-details.component';
 import { MapView } from '../components/map-view/map-view.component';
 
 import { EventService } from '../providers/event.service';

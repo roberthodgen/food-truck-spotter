@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
 
-import { FoodTruckEvent } from '../types/food-truck-event';
+import { FoodTruckEvent } from '../../types/food-truck-event';
 
 @Component({
   selector: 'event-details',
