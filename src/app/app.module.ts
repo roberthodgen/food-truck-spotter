@@ -10,7 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { MenuPage } from '../pages/menu/menu';
 import { EventPage } from '../pages/event/event';
 
-import { FutureEvents } from '../components/future-events.component';
+import { FutureEvents } from '../components/future-events/future-events.component';
 import { CurrentEvent } from '../components/current-event.component';
 import { EventDetails } from '../components/event-details/event-details.component';
 import { MapView } from '../components/map-view/map-view.component';

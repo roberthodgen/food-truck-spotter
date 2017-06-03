@@ -1,8 +1,8 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core'
 import {NavController} from 'ionic-angular';
 
-import { FoodTruckEvent } from '../types/food-truck-event';
-import {EventPage} from '../pages/event/event';
+import { FoodTruckEvent } from '../../types/food-truck-event';
+import {EventPage} from '../../pages/event/event';
 
 @Component({
   selector: 'future-events',
