@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges, ElementRef } from '@angular/core';
 
-import { Event } from '../../shared/event';
+import { Event } from '../../types/event';
 
 const WHITE_SPACE = new RegExp('\w');
 function searchEncode(input: string): string {

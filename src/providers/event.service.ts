@@ -3,7 +3,7 @@ import {Http}       from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import {Event} from '../shared/event';
+import {Event} from '../types/event';
 
 @Injectable()
 export class EventService {

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 
-import { Event } from '../../shared/event';
+import { Event } from '../../types/event';
 import { MenuPage } from '../menu/menu';
 import { EventService } from "../../providers/event.service";
 

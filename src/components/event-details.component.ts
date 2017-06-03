@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
 
-import { Event } from '../shared/event';
+import { Event } from '../types/event';
 
 @Component({
   selector: 'event-details',

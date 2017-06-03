@@ -1,7 +1,7 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core'
 import {NavController} from 'ionic-angular';
 
-import { Event } from '../shared/event';
+import { Event } from '../types/event';
 import {EventPage} from '../pages/event/event';
 
 @Component({

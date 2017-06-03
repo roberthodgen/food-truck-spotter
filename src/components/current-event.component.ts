@@ -1,6 +1,6 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 
-import { Event } from '../shared/event';
+import { Event } from '../types/event';
 import { NavController } from "ionic-angular";
 import { EventPage } from '../pages/event/event';
 

@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { MenuPage } from '../menu/menu';
-import { Event } from '../../shared/event';
+import { Event } from '../../types/event';
 import { EventService } from '../../providers/event.service';
 
 function startCompare(eventA: Event, eventB: Event): number {
